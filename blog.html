@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Blog | Audible Talents</title>
+  <meta name="description" content="Browse Audible Talents blog articles on business, geopolitics, technology & AI, money & markets, and the future of work.">
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo">
+        <img src="assets/images/logo-placeholder.png" alt="Audible Talents logo">
+        <span>Audible Talents</span>
+      </a>
+
+      <nav class="site-nav" aria-label="Main navigation">
+        <button class="nav-toggle" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="nav-toggle-line"></span>
+          <span class="nav-toggle-line"></span>
+        </button>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a class="active" href="blog.html">Blog</a></li>
+          <li><a href="podcast.html">Podcast</a></li>
+          <li><a href="video.html">Video</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <div class="container">
+        <h1>Blog</h1>
+        <p>Dive into short, clear explainers on the forces shaping money, work, and opportunity.</p>
+      </div>
+    </section>
+
+    <!-- Category Filters -->
+    <section class="section" aria-labelledby="blog-filter-heading">
+      <div class="container">
+        <div class="blog-filter-header">
+          <h2 id="blog-filter-heading">Browse by Category</h2>
+          <div class="blog-filters" role="tablist" aria-label="Blog filters">
+            <button class="filter-btn active" data-filter="all" role="tab">All</button>
+            <button class="filter-btn" data-filter="business-economy" role="tab">Business &amp; Economy</button>
+            <button class="filter-btn" data-filter="geopolitics" role="tab">Geopolitics</button>
+            <button class="filter-btn" data-filter="technology-ai" role="tab">Technology &amp; AI</button>
+            <button class="filter-btn" data-filter="money-markets" role="tab">Money &amp; Markets</button>
+            <button class="filter-btn" data-filter="digital-opportunities" role="tab">Digital Opportunities &amp; Future of Work</button>
+          </div>
+        </div>
+
+        <div class="blog-layout">
+          <!-- Blog Cards -->
+          <div class="grid grid-3 blog-grid" id="blog-grid">
+            <!-- Example post per category -->
+
+            <article class="card blog-card" data-category="business-economy">
+              <img src="assets/images/post-thumb-placeholder.jpg" alt="City skyline and trade routes">
+              <div class="card-content">
+                <div class="card-tag">Business &amp; Economy</div>
+                <h3><a href="post.html">The New Trade Routes Redrawing the Map</a></h3>
+                <p>
+                  How shifting alliances and infrastructure corridors are quietly changing where
+                  opportunity flows.
+                </p>
+                <p class="meta">5 min read · Updated recently</p>
+              </div>
+            </article>
+
+            <article class="card blog-card" data-category="geopolitics">
+              <img src="assets/images/post-thumb-placeholder.jpg" alt="Flags and shifting global power">
+              <div class="card-content">
+                <div class="card-tag">Geopolitics</div>
+                <h3><a href="post.html">Power, Sanctions &amp; The Everyday Cost of Geopolitics</a></h3>
+                <p>
+                  Why decisions made in distant capitals show up in your fuel price, food bill, and job market.
+                </p>
+                <p class="meta">7 min read · Explainer</p>
+              </div>
+            </article>
+
+            <article class="card blog-card" data-category="technology-ai">
+              <img src="assets/images/post-thumb-placeholder.jpg" alt="AI network and digital code">
+              <div class="card-content">
+                <div class="card-tag">Technology &amp; AI</div>
+                <h3><a href="post.html">AI vs Your Job: Threat, Upgrade, or Both?</a></h3>
+                <p>
+                  A practical breakdown of which roles are changing, which are emerging, and how to adapt.
+                </p>
+                <p class="meta">6 min read · Future of work</p>
+              </div>
+            </article>
+
+            <article class="card blog-card" data-category="money-markets">
+              <img src="assets/images/post-thumb-placeholder.jpg" alt="Currencies and financial charts">
+              <div class="card-content">
+                <div class="card-tag">Money &amp; Markets</div>
+                <h3><a href="post.html">Inflation, Interest Rates &amp; Your Monthly Budget</a></h3>
+                <p>
+                  Simple stories that connect central bank decisions to your rent, savings, and salary.
+                </p>
+                <p class="meta">4 min read · Money basics</p>
+              </div>
+            </article>
+
+            <article class="card blog-card" data-category="digital-opportunities">
+              <img src="assets/images/post-thumb-placeholder.jpg" alt="Laptop and remote work setup">
+              <div class="card-content">
+                <div class="card-tag">Digital Opportunities &amp; Future of Work</div>
+                <h3><a href="post.html">From Local to Global: Freelance Work Across Borders</a></h3>
+                <p>
+                  How everyday skills can be repackaged for remote clients around the world.
+                </p>
+                <p class="meta">8 min read · Step-by-step</p>
+              </div>
+            </article>
+
+            <article class="card blog-card" data-category="technology-ai">
+              <img src="assets/images/post-thumb-placeholder.jpg" alt="Smartphone and speech bubbles">
+              <div class="card-content">
+                <div class="card-tag">Technology &amp; AI</div>
+                <h3><a href="post.html">What AI Can (and Can’t) Decide For You</a></h3>
+                <p>
+                  Where to lean on AI tools, and where your human judgment still matters more than ever.
+                </p>
+                <p class="meta">5 min read · Tools &amp; tips</p>
+              </div>
+            </article>
+          </div>
+
+          <!-- Sidebar -->
+          <aside class="blog-sidebar" aria-label="Additional navigation">
+            <div class="sidebar-section">
+              <h3>Recent Highlights</h3>
+              <ul class="sidebar-list">
+                <li><a href="post.html">5 Signals Your Job Market is Shifting</a></li>
+                <li><a href="post.html">How Central Banks Shape Your Daily Life</a></li>
+                <li><a href="post.html">The Quiet Rise of Night Economies</a></li>
+              </ul>
+            </div>
+
+            <div class="sidebar-section">
+              <h3>Tools &amp; Resources</h3>
+              <p>Go deeper with our guides and digital products.</p>
+              <a href="#" class="btn btn-primary btn-full">Get the Guide on Gumroad</a>
+              <a href="#" class="btn btn-outline btn-full">Access the Full Toolkit</a>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <h3>Audible Talents</h3>
+        <p>Digital explainers and insights on global issues, tech shifts, and the future of work.</p>
+      </div>
+      <div class="footer-links">
+        <h4>Navigate</h4>
+        <ul>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="podcast.html">Podcast</a></li>
+          <li><a href="video.html">Video</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-links">
+        <h4>Connect</h4>
+        <ul>
+          <li><a href="#">YouTube</a></li>
+          <li><a href="#">Gumroad</a></li>
+          <li><a href="#">Newsletter</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; <span id="year"></span> Audible Talents. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

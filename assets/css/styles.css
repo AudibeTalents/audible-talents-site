@@ -927,3 +927,24 @@ audio {
   border: 0;
 }
 
+/* Standard blog featured image */
+.post-featured-image {
+  width: 100%;
+  max-height: 420px; /* consistent hero height */
+  overflow: hidden;
+  border-radius: 16px;
+  margin: 2rem 0;
+}
+
+.post-featured-image img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+@media (min-width: 1024px) {
+  .post-featured-image {
+    max-height: 480px;
+  }
+}

@@ -967,3 +967,10 @@ audio {
   border: none;
   border-radius: 12px;
 }
+
+/* Ensure contact form container grows with iframe */
+.contact-form-wrapper {
+  height: auto;
+  max-height: none;
+  overflow: visible;
+}

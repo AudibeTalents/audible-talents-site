@@ -948,3 +948,9 @@ audio {
     max-height: 480px;
   }
 }
+
+.contact-form-embed iframe {
+  width: 100% !important;
+  max-width: 100%;
+  border-radius: 12px;
+}

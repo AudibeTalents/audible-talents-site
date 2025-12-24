@@ -204,12 +204,53 @@
         <div class="newsletter-block" aria-labelledby="newsletter-heading">
           <h3 id="newsletter-heading">Stay Ahead, Calmly</h3>
           <p>Get new explainers, tools, and opportunities delivered to your inbox.</p>
-          <form class="newsletter-form" action="#" method="post">
-            <label class="sr-only" for="newsletter-email">Email address</label>
-            <input type="email" id="newsletter-email" name="email" placeholder="Enter your email" required>
-            <button type="submit" class="btn btn-primary">Get Updates</button>
-            <p class="form-hint">No spam. Just clear, useful insights.</p>
-          </form>
+          <form
+  class="newsletter-form"
+  name="newsletter-updates"
+  method="POST"
+  data-netlify="true"
+  netlify-honeypot="bot-field"
+  action="/thank-you.html"
+>
+  <!-- Required for Netlify to identify the form -->
+  <input type="hidden" name="form-name" value="newsletter-updates" />
+
+  <!-- Honeypot field (hidden) -->
+  <p class="sr-only">
+    <label>
+      Don’t fill this out if you’re human: <input name="bot-field" />
+    </label>
+  </p>
+
+  <div class="form-group">
+    <label class="sr-only" for="newsletter-name">Name</label>
+    <input
+      id="newsletter-name"
+      name="name"
+      type="text"
+      placeholder="Your name"
+      autocomplete="name"
+      required
+    />
+  </div>
+
+  <div class="form-group">
+    <label class="sr-only" for="newsletter-email">Email</label>
+    <input
+      id="newsletter-email"
+      name="email"
+      type="email"
+      placeholder="Enter your email"
+      autocomplete="email"
+      required
+    />
+  </div>
+
+  <button type="submit" class="btn btn-primary">Get Updates</button>
+
+  <p class="form-hint">No spam. Just clear, useful insights.</p>
+</form>
+
         </div>
       </div>
     </section>
@@ -247,6 +288,7 @@
   <script src="assets/js/main.js"></script>
 </body>
 </html>
+
 
 
 

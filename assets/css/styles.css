@@ -1067,21 +1067,19 @@ audio {
 }
  
 .ad-slot {
-  max-width: 900px;
+  max-width: 728px;
   margin: 0 auto;
   text-align: center;
 }
- 
+
 .ad-image {
   width: 100%;
+  max-width: 728px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
   border-radius: 12px;
   box-shadow: 0 10px 30px rgba(0,0,0,0.15);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
- 
-.ad-image:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 16px 40px rgba(0,0,0,0.22);
 }
  
 .ad-caption {

@@ -1150,3 +1150,9 @@ audio {
   .ad-fallback-media { width: 100%; }
 }
 -->
+/* ── PORTRAIT VIDEO AD ── */
+.video-embed--portrait {
+  padding-bottom: 177.78%;
+  max-width: 320px;
+  margin: 0 auto;
+}
